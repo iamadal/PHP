@@ -1,1 +1,0 @@
-$name = document.setCookie = 12;
