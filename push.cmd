@@ -1,4 +1,5 @@
 @echo off
+set date = %date%_%time%
 git add --all
-git commit -m "OK"
+git commit -m "%date%" 
 git push
