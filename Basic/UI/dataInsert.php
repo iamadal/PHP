@@ -1,3 +1,4 @@
+
 <?php
 
 $username = "";
@@ -9,16 +10,11 @@ $password = password_hash(trim($_POST['password']), PASSWORD_DEFAULT);
 echo $password;
 // connect to database - no error handling
 
-$conn = new mysqli("localhost","root","5576","mydb");
+$conn = new mysqli("localhost","root","55761910","mydb");
 
-$sql  = "INSERT INTO users(username,password) VALUES(?,?)";
-
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("ss",$username,$password);
-$stmt->execute();
+mail("mdadalkahn@gmail.com","Sent from PHP");
    
 ?>
-
 
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"> 
    <input type="text" name="username" placeholder="username"><br>
@@ -30,3 +26,4 @@ $stmt->execute();
 <style>
 		* {box-sizing: border-box; padding: 5px; margin: 5px; outline: 0;}
 </style>
+

@@ -45,7 +45,7 @@ $user_err = "";
  		
  		// Connect Db and Query -> Set Session and Track Users
 
- 		$conn = new mysqli("localhost","root","5576","mydb");
+ 		$conn = new mysqli("localhost","root","55761910","mydb");
  		if($conn->connect_error){
  			die('Failed to connect');
  		} else {
