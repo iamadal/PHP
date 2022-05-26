@@ -9,7 +9,7 @@
   *
   */
 
-  $m = new mysqli("localhost","root","5576");
+  $m = new mysqli("localhost","root","557610");
 
   // Error Handling
 
@@ -19,7 +19,7 @@
   	echo "Connected with Localhost<br>";
   }
 
-
+$m->
 // QUERY
 
   $sql = "SHOW DATABASES";
